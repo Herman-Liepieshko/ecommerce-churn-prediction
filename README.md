@@ -4,7 +4,15 @@ End-to-end ML pipeline for predicting e-commerce customer churn. This project de
 
 ## Skills Demonstrated
 
-Data Cleaning | EDA | Feature Engineering | Machine Learning | Binary Classification | Logistic Regression | Random Forest | Gradient Boosting | scikit-learn | Model Evaluation | Business Insights
+| Skill | Details |
+|-------|---------|
+| Data Cleaning | Missing value imputation, outlier handling, type correction |
+| EDA | 8+ visualizations with business-focused insights |
+| Feature Engineering | 5 new features derived from domain knowledge |
+| Machine Learning | Binary classification with 3 model comparison |
+| Model Evaluation | Accuracy, Precision, Recall, F1-Score, Confusion Matrix |
+| scikit-learn | Pipeline: StandardScaler, LogisticRegression, RandomForest, GradientBoosting |
+| Business Analysis | Churn factor identification and retention recommendations |
 
 ## Pipeline Overview
 
@@ -34,9 +42,9 @@ Raw Data (.xlsx) --> Data Quality Assessment --> EDA (8+ visualizations)
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 |-------|----------|-----------|--------|----------|
-| Logistic Regression | 0.8961 | 0.7664 | 0.5526 | 0.6422 |
+| Logistic Regression (baseline) | 0.8961 | 0.7664 | 0.5526 | 0.6422 |
 | Gradient Boosting | 0.9583 | 0.9181 | 0.8263 | 0.8698 |
-| **Random Forest** | **0.9787** | **0.9826** | **0.8895** | **0.9337** |
+| **Random Forest (best)** | **0.9787** | **0.9826** | **0.8895** | **0.9337** |
 
 Random Forest achieved the best overall performance with an F1-score of 0.93, balancing precision and recall effectively.
 
@@ -54,20 +62,20 @@ Based on Gradient Boosting feature importance:
 
 ```
 ecommerce-churn-prediction/
-|-- data/
-|   |-- raw/                  # Original dataset (.xlsx)
-|   +-- processed/            # Cleaned dataset (.csv)
-|-- notebooks/
-|   +-- churn_prediction.ipynb  # Full analysis notebook
-|-- README.md
-+-- requirements.txt
+├── data/
+│   ├── raw/                  # Original dataset (.xlsx)
+│   └── processed/            # Cleaned dataset (.csv)
+├── notebooks/
+│   └── churn_prediction.ipynb  # Full analysis notebook
+├── README.md
+└── requirements.txt
 ```
 
 ## How to Run
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ecommerce-churn-prediction.git
+   git clone https://github.com/Herman-Liepieshko/ecommerce-churn-prediction.git
    cd ecommerce-churn-prediction
    ```
 
